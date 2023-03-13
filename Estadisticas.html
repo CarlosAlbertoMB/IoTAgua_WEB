@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preload" href="Styles/normalize.css" as="style">
+    <link rel="preload" href="Styles/estilos.css" as="style">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/estilos.css">
+    <title>Estadisticas</title>
+</head>
+<body class="bodyBackgroundDefault">
+    <header class="encabezado">
+        <h1>Esquemas y analisis</h1>
+    </header>
+    <div class="navegacion__contenedor">
+        <nav class="navegacion">
+            <a class="navegacion__elemento" href="index.html">Regresar</a>
+            <a class="navegacion__elemento" href="Mostrar.html">Mostrar Valores</a>
+            <a class="navegacion__elemento" href="AgregarNuevoValor.html">Ingresar Nueva lectura</a>
+            <a class="navegacion__elemento" href="Estadisticas.html">Estadísticas</a>
+            <a class="navegacion__elemento" href="#">Acerca de</a>
+        </nav>
+    </div>
+    
+    <main class="mainBg">
+        <div> 
+            <div class="contenedorMB cuadroCentrado sombras">
+                <section class="tituloMain">
+                    <h2>Estadísticas</h2>
+                </section>
+                <div>
+                    <section style="height: 30rem; width:30rem">
+                        <canvas id="graficoBarras" style="height: 30rem; width: 30rem">
+                            
+                        </canvas>
+                    </section>
+                    <section>
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </section>
+                </div>
+                
+        </div>
+        <footer class="footer">Misantla Ver. 2023</footer>
+    </main>
+
+<script>
+    Notification.requestPermission();
+</script>
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
+
+<script type="module" src="./Scripts/Script04.js"></script>
+
+</body>
+</html>

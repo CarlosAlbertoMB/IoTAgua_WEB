@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preload" href="Styles/normalize.css" as="style">
+    <link rel="preload" href="Styles/estilos.css" as="style">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/estilos.css">
+
+    <title>Principal</title>
+</head>
+<body class="bodyBackgroundDefault">
+    <header class="encabezado">
+        <h1>Cambios manuales y eliminación de registros</h1>
+    </header>
+    <div class="navegacion__contenedor">
+        <nav class="navegacion">
+            <a class="navegacion__elemento" href="index.html">Regresar</a>
+            <a class="navegacion__elemento" href="Mostrar.html">Mostrar Valores</a>
+            <a class="navegacion__elemento" href="AgregarNuevoValor.html">Ingresar Nueva lectura</a>
+            <a class="navegacion__elemento" href="Estadisticas.html">Estadísticas</a>
+            <a class="navegacion__elemento" href="#">Acerca de</a>
+        </nav>
+    </div>
+    
+    <main class="mainBg">
+        <div> 
+            <div class="contenedorMB cuadroCentrado sombras">
+                <section class="tituloMain">
+                    <h2>Edicion y eliminacion de registros</h2>
+                </section>
+                <div class="gridModificaciones">
+                    <section style="overflow-y: scroll; height: 35rem;">
+                        <h3>
+                            Lecturas registradas
+                        </h3>
+                        <div class="lecturasDisplay" id="lecturasDisplay">
+                            
+                        </div>
+                        
+                    </section>
+                    <section>
+                        <form id="formularioEditar">
+                            <legend></legend>
+                            <fieldset>
+                                <div class="formularioInputs">
+                                    <div class="formularioIndividual">
+                                        <label>ID</label>
+                                        <input type="text" placeholder="ID" id="inID">
+                                    </div>
+                                    <div>
+                                        <input class="borrar" type="button" value="Eliminar" id="inBorrar">
+                                    </div>
+                                </div>
+                                <div class="formularioInputs">
+                                    <div class="formularioIndividual">
+                                        <label>Fecha</label>
+                                        <input type="text" placeholder="Fecha" id="inFecha">
+                                    </div>
+                                    <div class="formularioIndividual">
+                                        <label>Humedad</label>
+                                        <input type="number" placeholder="Humedad" step="0.01" id="inHumedad">
+                                    </div>
+                                    <div class="formularioIndividual">
+                                        <label>Sensacion termica C</label>
+                                        <input type="number" placeholder="Sensacion termica C" step="0.01" id="inSTC">
+                                    </div>
+                                    <div class="formularioIndividual">
+                                        <label>Sensacion Termica F</label>
+                                        <input type="number" placeholder="Sensacion Termica F" step="0.01" id="inSTF">
+                                    </div>
+                                    <div class="formularioIndividual">
+                                        <label>Temperatura C</label>
+                                        <input type="number" placeholder="Temperatura C" step="0.01" id="inTemperaturaC">
+                                    </div>
+                                    <div class="formularioIndividual">
+                                        <label>Temperatura F</label>
+                                        <input type="number" placeholder="Temperatura F" step="0.01" id="inTemperaturaF">
+                                    </div>
+                                </div>
+                                <div class="contenedorBtn">
+                                    <style>
+                                        
+                                    </style>
+                                    <input type="submit" value="Guardar" class="btnEnviar">
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
+                
+        </div>
+        <aside>
+            
+        </aside>
+        <footer class="footer">
+
+            Misantla Ver. 2023
+
+        </footer>
+    </main>
+
+<script>
+    Notification.requestPermission();
+</script>
+<script type="module" src="./Scripts/Script03.js"></script>
+
+</body>
+</html>

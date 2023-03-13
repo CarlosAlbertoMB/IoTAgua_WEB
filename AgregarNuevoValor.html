@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preload" href="Styles/normalize.css" as="style">
+    <link rel="preload" href="Styles/estilos.css" as="style">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/estilos.css">
+    <title>Nueva Lectura</title>
+
+</head>
+<body class="bodyBackgroundDefault"> 
+    <header class="encabezado encabezadoMostrar">
+        <h1>
+            Ingresar nueva lectura
+        </h1>
+    </header>
+    <div class="navegacion__contenedor">
+        <nav class="navegacion">
+            <a class="navegacion__elemento" href="index.html">Regresar</a>
+            <a class="navegacion__elemento" href="Mostrar.html">Mostrar Valores</a>
+            <a class="navegacion__elemento" href="ModificarBorrar.html">Modificar registro</a>
+            <a class="navegacion__elemento" href="Estadisticas.html">Estadísticas</a>
+            <a class="navegacion__elemento" href="#">Acerca de</a>
+        </nav>
+    </div>   
+    <main class="mainBg">
+        <div class="contenedorAgregar cuadroCentrado sombras">
+            <section class="tituloMain">
+                <h2>
+                    Introducir nueva lectura ajena al sistema
+                </h2>
+            </section>
+            <form id="formularioAgregar">
+                <fieldset class="fieldset">
+                    <legend>
+                        
+                    </legend>
+                    <div class="formularioInputs">
+                        <div class="formularioIndividual">
+                            <label>Fecha: </label>
+                            <input id="inFecha" type="text" placeholder="Fecha de registro">
+                        </div>
+                        <div class="formularioIndividual">
+                            <label>Humedad: </label>
+                            <input id="inHumedad" type="number" step="0.01" placeholder="Humedad">
+                        </div>
+                        <div class="formularioIndividual">
+                            <label>Sensacion termica en C: </label>
+                            <input id="inSTC" type="number" step="0.01" placeholder="Sensacion termica en C">
+                        </div>
+                        <div class="formularioIndividual">
+                            <label>Sensacion Termica en F: </label>
+                            <input id="inSTF"type="number" step="0.01" placeholder="Sensacion termica en F">
+                        </div>
+                        <div class="formularioIndividual">
+                            <label>Temperatura en C: </label>
+                            <input id="inTemperaturaC" type="number" step="0.01" placeholder="Temperatura en C">
+                        </div>
+                        <div class="formularioIndividual">
+                            <label>Temperatura en F: </label>
+                            <input id="inTemperaturaF" type="number" step="0.01" placeholder="Temperatura en F">
+                        </div>
+                    </div> 
+                    <div class="contenedorBtn">
+                        <input class="btnEnviar" id="inEnviar" type="submit" placeholder="Registrar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    <footer class="footer">Misantla Ver. 2023</footer>    
+    <script type="module" src="/Scripts/Script02.js"></script>
+    </main>
+</body>
+</html>
